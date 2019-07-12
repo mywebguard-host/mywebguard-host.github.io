@@ -8,8 +8,7 @@
 	alert(3);
 	localStorage.setItem('test', JSON.stringify(test));
 	var fromStorage = JSON.parse(localStorage.getItem('test'));
-	alert("This was retrieved from the host" +JSON.stringify(fromStorage));
-	</script>
+</script>
 	
 	<script src="https://mywebguard-thirdparty.github.io/script.js">	
 	</script>
@@ -19,6 +18,9 @@
 
 <body>
 <h1> MyWebGuard evaluation</h1>
+<script>
+alert("This was retrieved from the host " +JSON.stringify(fromStorage));
+</script>
  
 TODO steps:
   
