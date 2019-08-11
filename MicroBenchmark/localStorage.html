@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MircoBenchmark</title>
+    <script>
+var popup = alert;
+var text = document.createTextNode;
+var append = document.lastChild.appendChild;
+var timeDiff  =  {
+    setStartTime:function (){
+        d = new Date();
+        time  = d.getTime();
+    },
+    getDiff:function (){
+        d = new Date();
+        //popup('Render time:'+ (d.getTime()-time));
+        var rendertime = document.createTextNode('Render time:'+ (d.getTime()-time)+ 'ms');
+        document.lastChild.appendChild(rendertime);
+    }
+}
+timeDiff.setStartTime();
+for(i = 0; i <= 10000; i++) {
+  localStorage.getItem("");
+}
+timeDiff.getDiff();
+</script>
+</head>
+
+<body>
+Microbenmark for localStorage.getItem()</body>
+
+</html>
