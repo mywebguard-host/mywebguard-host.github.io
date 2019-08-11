@@ -1,4 +1,4 @@
-if (document.cookie && document.cookie.indexOf("mywebguard")>0) {
+if (document.cookie && document.cookie.indexOf("mywebguard")>=0) {
 	alert("Debug from https://mywebguard-host.github.io: document.cookie="+
 			document.cookie);
 }else
