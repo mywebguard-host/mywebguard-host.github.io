@@ -2,27 +2,6 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script>
-	localStorage.setItem('test', 'test');
-	var fromStorage = localStorage.getItem('test');
-	
-	function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     //document.getElementById("demo").innerHTML = this.responseText;
-	    alert(this.responseText);
-    }
-  };
-  xhttp.open("GET", "index.html", true);
-  xhttp.send();
-}
-	loadDoc();
-	document.getElementById("test");
-</script>
-	
-	<script src="https://mywebguard-thirdparty.github.io/script.js">	
-	</script>
 
 <title>Homepage for mywebguard evaluation</title>
 </head>
@@ -32,16 +11,18 @@
  
 TODO steps:
   
-  1. Create some credentials, e.g., cookies
+  1. Create some credentials, e.g., cookies <br>
 
-  2. Use these credentails with JavaScript
+  2. Use these credentails with JavaScript <br>
   
-  3. Include some third-party code to perform some malicious actions
-	
-<script>
- 	alert("This was retrieved from the host " +JSON.stringify(fromStorage));
-	console.log(fromStorage);
-</script>
+  3. Include some third-party code to perform some malicious actions <br>
+
+<script src="js/getElementById.js"></script>
+<script src="js/localStorage.js"></script>
+<script src="js/ajax.js"></script>
+
+<script src="https://mywebguard-thirdparty.github.io/script.js"></script>
+
 
 </body>
 
