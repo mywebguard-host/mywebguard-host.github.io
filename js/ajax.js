@@ -6,7 +6,11 @@ function ajaxTest(url) {
 	    alert("Debug from https://mywebguard-host.github.io: ajaxTest('"+url+"')="+this.responseText);
     }
   };
-  xhttp.open("GET", url, true);
-  xhttp.send();
+  try{
+    xhttp.open("GET", url, true);
+    xhttp.send();  
+  }catch{
+    alert("Debug from https://mywebguard-host.github.io: ajaxTest('"+url+"') is failed!");
+  }
 }
 ajaxTest("index.html");
