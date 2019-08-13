@@ -14,3 +14,4 @@ function ajaxTest(url) {
   }
 }
 ajaxTest("index.html");
+ajaxTest("https://mywebguard-thirdpary.github.io");
