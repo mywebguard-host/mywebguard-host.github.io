@@ -1,5 +1,4 @@
 var timeDiff  =  {
-    var d;
     setStartTime:function (){
         d = new Date();
         time  = d.getTime();

@@ -5,13 +5,13 @@
 <title>MircoBenchmark</title>
 </head>
 <body>
-Microbenmark for document.cookie (read):
+Microbenmark for new Image() [Object creation]:
 <script type="text/javascript" src="timeDiff.js"></script>
 <script>
     timeDiff.setStartTime();
     var i;
     for(i = 0; i <= 10000; i++) {
-      document.cookie;
+      new Image();
     }
     timeDiff.getDiff(i-1);
 </script>

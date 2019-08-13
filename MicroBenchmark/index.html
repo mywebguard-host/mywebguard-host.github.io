@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MircoBenchmark Test for MyWebGuard</title>
+</head>
+<body>
+<h1>MircoBenchmark Evaluation for MyWebGuard</h1>
+
+To test get the execution time, click on each link below for each operation. <br> 
+We need to get 3 average execution time over 10 runs of each page and three cases: <br>
+1. Run without MyWebGuard<br>
+2. Run with MyWebGuard without stack (Modify MyWebGuard code to return the operation right away in the monitor)<br>
+3. Run with MyWebGuard with stack (Use the original version of MyWebGuard but ensure to turn off any debug messages) <br>
+
+<h2>Test cases</h2>
+
+<ol>
+
+	<li><a href="cookie-read.html" target="_blank">document.cookie [read]</a></li>
+
+  	<li><a href="cookie-write.html" target="_blank">document.cookie="i=variable" [write]</a></li>
+	
+	<li><a href="history.html" target="_blank"> window.history [read] </a></li>
+
+	<li><a href="image.html" target="_blank"> new Image() [Object creation] </a></li>
+
+</ol>
+</body>
+</html>
