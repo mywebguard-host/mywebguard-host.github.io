@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MircoBenchmark</title>
+</head>
+
+<body>
+Microbenmark for document.cookie (read):
+<script type="text/javascript" src="timeDiff.js"></script>
+<script>
+    timeDiff.setStartTime();
+    var i;
+    for(i = 0; i <= 10000; i++) {
+      document.cookie;
+    }
+    timeDiff.getDiff(i);
+</script>
+</body>
+</html>
