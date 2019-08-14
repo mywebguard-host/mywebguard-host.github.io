@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MircoBenchmark</title>
+</head>
+<body>
+Microbenmark for new WebSocket("wss:http://echo.websocket.org") [Object creation]:
+<script type="text/javascript" src="timeDiff.js"></script>
+<script>
+    timeDiff.setStartTime();
+    var i;
+    for(i = 0; i <= 10000; i++) {
+      new WebSocket("wss:http://echo.websocket.org");
+    }
+    timeDiff.getDiff(i-1);
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MircoBenchmark</title>
+</head>
+<body>
+Microbenmark for (new Image()).src="test.png" [Object creation and Proterty set]:
+<script type="text/javascript" src="timeDiff.js"></script>
+<script>
+    timeDiff.setStartTime();
+    var i;
+    for(i = 0; i <= 10000; i++) {
+      (new Image()).src="test.png";
+    }
+    timeDiff.getDiff(i-1);
+</script>
+</body>
+</html>
