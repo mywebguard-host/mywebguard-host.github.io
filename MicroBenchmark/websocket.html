@@ -11,7 +11,7 @@ Microbenmark for new WebSocket("wss:http://echo.websocket.org") [Object creation
     timeDiff.setStartTime();
     var i;
     for(i = 0; i <= 10000; i++) {
-      new WebSocket("wss:http://echo.websocket.org");
+      new WebSocket("wss://echo.websocket.org");
     }
     timeDiff.getDiff(i-1);
 </script>
